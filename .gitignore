@@ -25,5 +25,3 @@ hs_err_pid*
 target/*
 /custom-values.yaml
 /.idea/
-/tmp-build/
-/infra/azure.liberty.aks/
