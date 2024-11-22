@@ -45,7 +45,7 @@ param dbUserName string = 'azureroot'
 
 @description('Database administrator user password')
 @secure()
-param dbUserPassword string
+param dbUserPassword string = 'Secret123456'
 
 @description('The Model name for OpenAI')
 param openAIModelName string = 'gpt-4o'
