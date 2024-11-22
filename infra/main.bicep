@@ -39,13 +39,13 @@ param appGatewayCertificateOption string = 'generateCert'
 @description('Whether to enable cookie-based affinity')
 param enableCookieBasedAffinity bool = true
 
-@description('Server administrator login name')
+@description('Database administrator user name')
 @secure()
-param administratorLogin string = 'azureroot'
+param dbUserName string = 'azureroot'
 
-@description('Server administrator password')
+@description('Database administrator user password')
 @secure()
-param administratorLoginPassword string
+param dbUserPassword string
 
 @description('The Model name for OpenAI')
 param openAIModelName string = 'gpt-4o'
@@ -145,8 +145,8 @@ module flexibleserver './shared/flexibleserver.bicep' = {
         storageSizeGB: 64
       }
       version: '15'
-      administratorLogin: administratorLogin
-      administratorLoginPassword: administratorLoginPassword
+      administratorLogin: dbUserName
+      administratorLoginPassword: dbUserPassword
       allowAzureIPsFirewall: true
     }
 }
@@ -158,8 +158,8 @@ output AZURE_AKS_CLUSTER_NAME string = openLibertyOnAks.outputs.clusterName
 output AZURE_RESOURCE_GROUP string = rg.name
 output DB_NAME string = 'liberty-db-${suffix}'
 output DB_RESOURCE_NAME string = 'liberty-server-${suffix}'
-output DB_USER_NAME string = administratorLogin
-output DB_USER_PASSWORD string = administratorLoginPassword
+output DB_USER_NAME string = dbUserName
+output DB_USER_PASSWORD string = dbUserPassword
 output LOCATION string = location
 output RESOURCE_GROUP_NAME string = rg.name
 output WORKSPACE_ID string = monitoring.outputs.logAnalyticsWorkspaceId
