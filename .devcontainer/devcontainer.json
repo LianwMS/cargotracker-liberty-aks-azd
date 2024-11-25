@@ -11,5 +11,6 @@
       "jdkDistro": "ms",
       "installMaven": "true"
     }
-  }
+  },
+  "postCreateCommand": "azd config set alpha.aks.helm on"
 }
