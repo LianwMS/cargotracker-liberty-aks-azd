@@ -71,5 +71,3 @@ else {
     Write-Host "✅ All required tools are installed!" -ForegroundColor Green
 }
 
-# Install/upgrade application-insights extension
-az extension add --upgrade -n application-insights

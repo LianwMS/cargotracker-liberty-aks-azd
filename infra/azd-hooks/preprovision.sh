@@ -36,5 +36,3 @@ if [ -n "$error" ] && [ "$error" -eq 1 ]; then
 fi
 
 echo -e "\n✅ All required tools are installed!"
-
-az extension add --upgrade -n application-insights
