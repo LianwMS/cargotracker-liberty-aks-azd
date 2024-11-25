@@ -1,5 +1,8 @@
 #!/usr/bin/env pwsh
 
+# Enable Helm support
+azd config set alpha.aks.helm on
+
 $env:ACR_NAME = az acr list -g $env:RESOURCE_GROUP_NAME --query [0].name -o tsv
 $env:ACR_SERVER = az acr show -n $env:ACR_NAME -g $env:RESOURCE_GROUP_NAME --query 'loginServer' -o tsv
 $env:ACR_USER_NAME = az acr credential show -n $env:ACR_NAME -g $env:RESOURCE_GROUP_NAME --query 'username' -o tsv

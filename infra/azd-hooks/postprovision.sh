@@ -11,9 +11,6 @@ export ACR_NAME=$(az acr list  -g ${RESOURCE_GROUP_NAME} --query [0].name -o tsv
 export ACR_SERVER=$(az acr show -n $ACR_NAME -g ${RESOURCE_GROUP_NAME} --query 'loginServer' -o tsv)
 export AKS_NAME=$(az aks list -g ${RESOURCE_GROUP_NAME} --query \[0\].name -o tsv)
 
-# enable Helm support
-azd config set alpha.aks.helm on
-
 # Check if the repo exists before removing
 if helm repo list | grep -q "${HELM_REPO_NAME}"; then
   echo "Removing Repo '${HELM_REPO_NAME}'"
