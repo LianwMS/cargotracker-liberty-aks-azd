@@ -16,7 +16,7 @@ if ($helmRepos -match $env:HELM_REPO_NAME) {
     helm repo remove $env:HELM_REPO_NAME
 }
 else {
-    Write-Host "Repo '$env:HELM_REPO_NAME' not found in the list."
+    Write-Host "Helm Repo '$env:HELM_REPO_NAME' not found in the list."
 }
 
 helm repo add $env:HELM_REPO_NAME $env:HELM_REPO_URL

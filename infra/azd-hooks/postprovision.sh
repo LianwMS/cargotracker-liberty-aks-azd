@@ -16,7 +16,7 @@ if helm repo list | grep -q "${HELM_REPO_NAME}"; then
   echo "Removing Repo '${HELM_REPO_NAME}'"
   helm repo remove ${HELM_REPO_NAME}
 else
-  echo "Repo '${HELM_REPO_NAME}' not found in the list."
+  echo "Helm Repo '${HELM_REPO_NAME}' not found in the list."
 fi
 
 helm repo add ${HELM_REPO_NAME} ${HELM_REPO_URL}
