@@ -67,6 +67,10 @@ jobs:
         run: |
           azd up --no-prompt
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        timeout-minutes: 60
+
       - name: Show azd environments
         run: |
           azd env list
