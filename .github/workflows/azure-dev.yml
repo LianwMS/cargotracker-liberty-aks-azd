@@ -63,13 +63,16 @@ jobs:
         env:
           AZURE_ENV_NAME: ${{ env.AZURE_ENV_NAME }}
 
-      - name: Provision
-        run: |
-          azd up --no-prompt
 
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
-        timeout-minutes: 60
+        timeout-minutes: 160
+        with:
+          detached: true
+
+      - name: Provision
+        run: |
+          azd up --no-prompt
 
       - name: Show azd environments
         run: |
