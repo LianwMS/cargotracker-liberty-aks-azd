@@ -1,5 +1,11 @@
 #!/bin/bash
 
+azd config set alpha.aks.helm on
+echo "Pre--Enable Helm support with command: azd config set alpha.aks.helm on"
+
+preazdconfiglist=$(azd config list-alpha)
+echo "preazdconfiglist=$preazdconfiglist"
+
 # Function to check if a command exists
 check_command() {
     local cmd=$1
