@@ -1,4 +1,5 @@
 #!/bin/bash
+set -Eeuo pipefail
 
 azd config set alpha.aks.helm on
 echo "Pre--Enable Helm support with command: azd config set alpha.aks.helm on"
