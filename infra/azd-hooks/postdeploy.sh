@@ -11,3 +11,4 @@ echo "Cargo Tracker URL: ${CARGO_TRACKER_URL}"
 if kubectl get deployment cargo-tracker-cluster > /dev/null 2>&1; then
   kubectl rollout restart deployment/cargo-tracker-cluster
 fi
+echo "postdeploy.sh-----------------finished"

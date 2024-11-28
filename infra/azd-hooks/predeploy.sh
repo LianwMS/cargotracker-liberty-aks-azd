@@ -40,3 +40,4 @@ echo "helm install repo cargotracker-liberty-aks"
 export HELM_REPO_URL="https://azure-javaee.github.io/cargotracker-liberty-aks"
 export HELM_REPO_NAME="cargotracker-liberty-aks"
 helm repo add ${HELM_REPO_NAME} ${HELM_REPO_URL}
+echo "predeploy.sh-----------------finished"
