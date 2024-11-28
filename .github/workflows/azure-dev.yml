@@ -27,9 +27,6 @@ jobs:
 
       - name: Install Az extensions
         run: |
-          az extension add --upgrade -n containerapp --allow-preview true
-          az extension add --upgrade -n serviceconnector-passwordless --allow-preview true
-          az version
           azd config set alpha.aks.helm on
 
       - name: Set up JDK 17
@@ -64,16 +61,13 @@ jobs:
         env:
           AZURE_ENV_NAME: ${{ env.AZURE_ENV_NAME }}
 
-
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
-        timeout-minutes: 160
-        with:
-          detached: true
-
-      - name: Provision
+      - name: AZD UP
         run: |
           azd up --no-prompt
+
+      - name: AZD Down
+        run: |
+          azd dpwm
 
       - name: Show azd environments
         run: |
