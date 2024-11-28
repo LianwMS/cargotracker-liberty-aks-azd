@@ -1,5 +1,4 @@
 #!/bin/bash
-set -Eeuo pipefail
 
 # if folder tmp-build exists, delete the folder
 if [ -d "tmp-build" ];

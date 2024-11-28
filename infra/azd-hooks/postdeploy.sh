@@ -1,5 +1,4 @@
 #!/bin/bash
-set -Eeuo pipefail
 
 export GATEWAY_PUBLICIP_ID=$(az network application-gateway list \
   --resource-group ${RESOURCE_GROUP_NAME} \
