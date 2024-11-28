@@ -1,12 +1,12 @@
 
-# [Project Name]
+# Deploy Cargo Tracker to Open Liberty on Azure Kubernetes Service (AKS)
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](placeholder)
 [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](placeholder)
 
-(Longer Description, as compared to the GitHub "about" section of the project)
-(make sure to highlight the use case!)
-Sample application code is included in this project. You can use or modify this app code or you can rip it out and include your own.
+This sample shows you how to deploy an existing Liberty application to AKS using Liberty on AKS solution templates. When you're finished, you can continue to manage the application via the Azure CLI or Azure Portal.
+
+Cargo Tracker is a Domain-Driven Design Jakarta EE application. The application is built with Maven and deployed to Open Liberty running on Azure Kubernetes Service (AKS). The application is exposed by Azure Application Gateway service. For quickstart uses the [official Azure offer for running Liberty on AKS](https://aka.ms/liberty-aks), see [Deploy a Java application with Open Liberty or WebSphere Liberty on an Azure Kubernetes Service (AKS) cluster](https://learn.microsoft.com/azure/aks/howto-deploy-java-liberty-app).
 
 [Features](#features) • [Gettting Started](#getting-started) • [Guidance](#guidance)
 
@@ -31,10 +31,6 @@ This project framework provides the following features:
 ### Architecture Diagram
 
 Include a diagram describing the application. You can take [this image](https://raw.githubusercontent.com/Azure-Samples/serverless-chat-langchainjs/main/docs/images/architecture.drawio.png) as a reference.
-
-### Demo Video (optional)
-
-(Embed demo video here)
 
 ## Getting Started
 
