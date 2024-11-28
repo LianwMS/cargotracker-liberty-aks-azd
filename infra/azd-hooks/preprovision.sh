@@ -1,10 +1,9 @@
 #!/bin/bash
 
 azd config set alpha.aks.helm on
-echo "Pre--Enable Helm support with command: azd config set alpha.aks.helm on"
-
-preazdconfiglist=$(azd config list-alpha)
-echo "preazdconfiglist=$preazdconfiglist"
+export HELM_REPO_URL="https://azure-javaee.github.io/cargotracker-liberty-aks"
+export HELM_REPO_NAME="cargotracker-liberty-aks"
+helm repo add ${HELM_REPO_NAME} ${HELM_REPO_URL}
 
 # Function to check if a command exists
 check_command() {
