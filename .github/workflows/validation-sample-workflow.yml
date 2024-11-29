@@ -20,6 +20,9 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
+      - name: Install azd
+        uses: Azure/setup-azd@v1.0.0
+
       - name: azd config
         run: |
           azd config set alpha.aks.helm on
