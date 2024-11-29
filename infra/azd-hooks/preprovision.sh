@@ -1,10 +1,5 @@
 #!/bin/bash
 
-azd config set alpha.aks.helm on
-export HELM_REPO_URL="https://azure-javaee.github.io/cargotracker-liberty-aks"
-export HELM_REPO_NAME="cargotracker-liberty-aks"
-helm repo add ${HELM_REPO_NAME} ${HELM_REPO_URL}
-
 # Function to check if a command exists
 check_command() {
     local cmd=$1
@@ -41,4 +36,3 @@ if [ -n "$error" ] && [ "$error" -eq 1 ]; then
 fi
 
 echo -e "\n✅ All required tools are installed!"
-echo "preprovision.sh-----------------finished"

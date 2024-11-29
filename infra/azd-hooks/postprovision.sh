@@ -63,5 +63,3 @@ db:
   User: ${DB_USER_NAME}
   Password: ${DB_USER_PASSWORD}
 EOF
-
-echo "postprovision.sh-----------------finished"

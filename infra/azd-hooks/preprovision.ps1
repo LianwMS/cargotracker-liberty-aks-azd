@@ -70,4 +70,3 @@ if ($hasError) {
 else {
     Write-Host "✅ All required tools are installed!" -ForegroundColor Green
 }
-

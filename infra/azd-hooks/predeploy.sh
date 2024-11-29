@@ -25,17 +25,3 @@ docker push ${ACR_SERVER}/${IMAGE_NAME}:${IMAGE_VERSION}
 
 # Enable Helm support
 azd config set alpha.aks.helm on
-echo "Enable Helm support with command: azd config set alpha.aks.helm on"
-
-azdconfiglist=$(azd config list-alpha)
-echo "azdconfiglist=$azdconfiglist"
-
-
-echo "installing helm"
-curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-
-echo "helm install repo cargotracker-liberty-aks"
-
-helm repo add cargotracker-liberty-aks https://azure-javaee.github.io/cargotracker-liberty-aks
-helm repo update
-echo "predeploy.sh-----------------finished"
