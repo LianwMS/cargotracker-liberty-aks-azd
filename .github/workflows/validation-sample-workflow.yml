@@ -20,6 +20,10 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
+      - name: azd config
+        run: |
+          azd config set alpha.aks.helm on
+
       # https://github.com/microsoft/template-validation-action
       - uses: microsoft/template-validation-action@v0.3.2
         id: validation
