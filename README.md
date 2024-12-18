@@ -65,7 +65,10 @@ You can run this template by using GitHub Codespaces. The button will open a web
     ```
     It will prompt you to enter an environment name for azd like `cargo-tracker-liberty-aks-azd`, and then select a subscription from the list, and then select a location when OpenAI service is available(like "eastus2"). Then it will provision the resources and deploy the code.
 
-6. When azd is done, you can visit the output URL to see the running application.
+6. When azd is done, you can visit the output **Cargo Tracker URL** to see the running application.
+   ```shell
+   Cargo Tracker URL: http://******.cloudapp.azure.com/cargo-tracker/
+   ```
 
 
 ## Guidance
