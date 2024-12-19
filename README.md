@@ -69,6 +69,11 @@ You can run this template by using GitHub Codespaces. The button will open a web
    ```shell
    Cargo Tracker URL: http://******.cloudapp.azure.com/cargo-tracker/
    ```
+   
+7. To clean up the resources, run the following command:
+    ```shell
+    azd down
+    ```
 
 
 ## Guidance
@@ -108,3 +113,7 @@ You can estimate the cost of this project's architecture with [Azure's pricing c
 This template has [Managed Identity](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview) and Key Vault built in to eliminate the need for developers to manage these credentials. 
 
 Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials. Additionally, we have added a [GitHub Action tool](https://github.com/microsoft/security-devops-action) that scans the infrastructure-as-code files and generates a report containing any detected issues. To ensure best practices in your repo we recommend anyone creating solutions based on our templates ensure that the [Github secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning) setting is enabled in your repos.
+
+## Resources
+
+For step by step guide to deploy the application, see [Deploy Cargo Tracker to Open Liberty on Azure Kubernetes Service (AKS)](https://github.com/Azure-Samples/cargotracker-liberty-aks)
