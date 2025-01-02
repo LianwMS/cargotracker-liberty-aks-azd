@@ -33,7 +33,7 @@ The following technologies are part of the project:
 
 This project provides the following features:
 * Deploy an existing Liberty application to AKS using Liberty on AKS solution templates
-* Best practices to build Domain-Driven Design Jakarta EE applications.
+* Best practices to build Domain-Driven Design Jakarta EE applications
 * Find the shortest path for cargo transportation with Azure Open AI services
 
 ## Getting Started
@@ -106,9 +106,6 @@ You can estimate the cost of this project's architecture with [Azure's pricing c
 
 
 ### Security
-
-> [!NOTE]
-> When implementing this template please specify whether the template uses Managed Identity or Key Vault
 
 This template has [Managed Identity](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview) and Key Vault built in to eliminate the need for developers to manage these credentials. 
 
