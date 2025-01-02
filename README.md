@@ -6,7 +6,9 @@
 
 This sample shows you how to deploy an existing Liberty application to AKS using Liberty on AKS solution templates. When you're finished, you can continue to manage the application via the Azure CLI or Azure Portal.
 
-Cargo Tracker is a Domain-Driven Design Jakarta EE application. The application is built with Maven and deployed to Open Liberty running on Azure Kubernetes Service (AKS). The application is exposed by Azure Application Gateway service. For quickstart uses the [official Azure offer for running Liberty on AKS](https://aka.ms/liberty-aks), see [Deploy a Java application with Open Liberty or WebSphere Liberty on an Azure Kubernetes Service (AKS) cluster](https://learn.microsoft.com/azure/aks/howto-deploy-java-liberty-app).
+Cargo Tracker is a Domain-Driven Design Jakarta EE application. The application is built with Maven and deployed to Open Liberty running on Azure Kubernetes Service (AKS). The application is exposed by Azure Application Gateway service.   
+
+For quickstart uses the [official Azure offer for running Liberty on AKS](https://aka.ms/liberty-aks), see [Deploy a Java application with Open Liberty or WebSphere Liberty on an Azure Kubernetes Service (AKS) cluster](https://learn.microsoft.com/azure/aks/howto-deploy-java-liberty-app).
 
 [Features](#features) • [Gettting Started](#getting-started) • [Guidance](#guidance)
 
@@ -22,23 +24,28 @@ For a more comprehensive list of best practices and security recommendations for
 
 ## Features
 
+The following technologies are part of the project:
+
+* Java 17
+* Maven
+* [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/)
+* [Azure Developer CLI (azd)](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/)
+
 This project framework provides the following features:
 
 * Feature 1
 * Feature 2
 * ...
 
-### Architecture Diagram
-
-Include a diagram describing the application. You can take [this image](https://raw.githubusercontent.com/Azure-Samples/serverless-chat-langchainjs/main/docs/images/architecture.drawio.png) as a reference.
-
 ## Getting Started
 
-You have a few options for getting started with this template. The quickest way to get started is [GitHub Codespaces](#github-codespaces), since it will setup all the tools for you, but you can also [set it up locally](#local-environment). You can also use a [VS Code dev container](#vs-code-dev-containers)
+You have a few options for getting started with this template.
 
-This template uses [MODEL 1] and [MODEL 2] which may not be available in all Azure regions. Check for [up-to-date region availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#standard-deployment-model-availability) and select a region during deployment accordingly
+* [GitHub codespace](#github-codespaces)
+* [Visual Studio Code with remote containers option](#vs-code-dev-containers)
+* [Local Development](#local-environment)
 
-* We recommend using [SUGGESTED REGION]
+All the steps of this lab have been tested in the GitHub CodeSpace. This is the preferred option for running this lab!
 
 ### GitHub Codespaces
 
