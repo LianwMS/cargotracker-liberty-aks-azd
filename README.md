@@ -113,4 +113,4 @@ Applications can use managed identities to obtain Microsoft Entra tokens without
 
 ## Resources
 
-For step by step guide to deploy the application, see [Deploy Cargo Tracker to Open Liberty on Azure Kubernetes Service (AKS)](https://github.com/Azure-Samples/cargotracker-liberty-aks)
+For step by step guide to deploy the application, see [Deploy Cargo Tracker to Open Liberty on Azure Kubernetes Service (AKS)](https://github.com/Azure-Samples/cargotracker-liberty-aks).
