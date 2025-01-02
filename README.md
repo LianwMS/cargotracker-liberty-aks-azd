@@ -28,8 +28,8 @@ The following technologies are part of the project:
 * Azure Kubernetes Service (AKS)
 * Open Liberty
 * Azure Application Gateway
-* [Azure CLI (az)](https://github.com/Azure/azure-cli))
-* [Azure Developer CLI (azd)](https://github.com/microsoft/azd))
+* [Azure CLI (az)](https://github.com/Azure/azure-cli)
+* [Azure Developer CLI (azd)](https://github.com/microsoft/azd)
 
 This project provides the following features:
 * Deploy an existing Liberty application to AKS using Liberty on AKS solution templates
