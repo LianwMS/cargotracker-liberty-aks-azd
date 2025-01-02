@@ -10,7 +10,7 @@ Cargo Tracker is a Domain-Driven Design Jakarta EE application. The application 
 
 [Features](#features) • [Gettting Started](#getting-started) • [Guidance](#guidance)
 
-(include a screenshot of your template's endpoint here-- so users know what it should look like when they're done)
+![cargotracker-liberty-aks.png](images/cargotracker-liberty-aks.png)
 
 ## Important Security Notice (Template Owners, do not remove!)
 
