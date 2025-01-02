@@ -10,7 +10,7 @@ Cargo Tracker is a Domain-Driven Design Jakarta EE application. The application 
 
 [Features](#features) • [Gettting Started](#getting-started) • [Guidance](#guidance)
 
-(include a screenshot of your template's endpoint here-- so users know what it should look like when they're done)
+![cargotracker-liberty-aks.png](images/cargotracker-liberty-aks.png)
 
 ## Important Security Notice (Template Owners, do not remove!)
 
@@ -18,7 +18,7 @@ This template, the application code and configuration it contains, has been buil
 
 
 <!-- Documentation page is a WIP, this link does not exist yet -->
-For a more comprehensive list of best practices and security recommendations for Intelligent Applications, [visit our official documentation](#link)”
+For a more comprehensive list of best practices and security recommendations for Intelligent Applications, visit [Azure security best practices and patterns](https://learn.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns), [Azure security baseline for Intelligent Recommendations](https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/intelligent-recommendations-security-baseline).
 
 ## Features
 
@@ -28,12 +28,12 @@ The following technologies are part of the project:
 * Azure Kubernetes Service (AKS)
 * Open Liberty
 * Azure Application Gateway
-* [Azure CLI (az)](https://github.com/Azure/azure-cli))
-* [Azure Developer CLI (azd)](https://github.com/microsoft/azd))
+* [Azure CLI (az)](https://github.com/Azure/azure-cli)
+* [Azure Developer CLI (azd)](https://github.com/microsoft/azd)
 
 This project provides the following features:
 * Deploy an existing Liberty application to AKS using Liberty on AKS solution templates
-* Best practices to build Domain-Driven Design Jakarta EE applications.
+* Best practices to build Domain-Driven Design Jakarta EE applications
 * Find the shortest path for cargo transportation with Azure Open AI services
 
 ## Getting Started
@@ -107,13 +107,10 @@ You can estimate the cost of this project's architecture with [Azure's pricing c
 
 ### Security
 
-> [!NOTE]
-> When implementing this template please specify whether the template uses Managed Identity or Key Vault
-
 This template has [Managed Identity](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview) and Key Vault built in to eliminate the need for developers to manage these credentials. 
 
 Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials. Additionally, we have added a [GitHub Action tool](https://github.com/microsoft/security-devops-action) that scans the infrastructure-as-code files and generates a report containing any detected issues. To ensure best practices in your repo we recommend anyone creating solutions based on our templates ensure that the [Github secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning) setting is enabled in your repos.
 
 ## Resources
 
-For step by step guide to deploy the application, see [Deploy Cargo Tracker to Open Liberty on Azure Kubernetes Service (AKS)](https://github.com/Azure-Samples/cargotracker-liberty-aks)
+For step by step guide to deploy the application, see [Deploy Cargo Tracker to Open Liberty on Azure Kubernetes Service (AKS)](https://github.com/Azure-Samples/cargotracker-liberty-aks).
