@@ -55,6 +55,9 @@ services:
         k8s:
             namespace: default
             helm:
+                repositories:
+                    - name: cargotracker-liberty-aks
+                      url: https://azure-javaee.github.io/cargotracker-liberty-aks
                 releases:
                     - name: demo
                       chart: cargotracker-liberty-aks/cargotracker-liberty-aks-chart
