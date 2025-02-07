@@ -1,5 +1,8 @@
 {
   "image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
+  "containerEnv": {
+    "HELM_CACHE_HOME": "/tmp/helm-cache"
+  },
   "features": {
     "ghcr.io/devcontainers/features/azure-cli:1": {},
     "ghcr.io/azure/azure-dev/azd:0": {},
