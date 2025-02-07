@@ -13,8 +13,14 @@ jobs:
     name: template validation
     steps:
       - uses: actions/checkout@v4
-        with:
-          path: ${{ runner.temp }}/template
+
+      - name: Get current branch name
+        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
+
+      - name: Clone repo
+        working-directory: ${{ runner.temp }}
+        run: |
+          git clone --branch $BRANCH_NAME --single-branch https://github.com/${{ github.repository }} template
 
       # https://github.com/microsoft/template-validation-action
       - uses: microsoft/template-validation-action@v0.3.5
