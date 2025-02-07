@@ -1,6 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
-  "containerEnv": {
+  "remoteEnv": {
     "HELM_CACHE_HOME": "/tmp/helm-cache"
   },
   "features": {

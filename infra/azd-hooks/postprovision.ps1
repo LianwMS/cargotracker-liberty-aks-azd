@@ -3,23 +3,9 @@ if (Test-Path "tmp-build") {
     Remove-Item -Path "tmp-build" -Recurse -Force
 }
 
-$env:HELM_REPO_URL = "https://azure-javaee.github.io/cargotracker-liberty-aks"
-$env:HELM_REPO_NAME = "cargotracker-liberty-aks"
 $env:ACR_NAME = (az acr list -g $env:RESOURCE_GROUP_NAME --query "[0].name" -o tsv)
 $env:ACR_SERVER = (az acr show -n $env:ACR_NAME -g $env:RESOURCE_GROUP_NAME --query "loginServer" -o tsv)
 $env:AKS_NAME = (az aks list -g $env:RESOURCE_GROUP_NAME --query "[0].name" -o tsv)
-
-# Check if the repo exists before removing
-$helmRepos = helm repo list
-if ($helmRepos -match $env:HELM_REPO_NAME) {
-    Write-Host "Removing Repo '$env:HELM_REPO_NAME'"
-    helm repo remove $env:HELM_REPO_NAME
-}
-else {
-    Write-Host "Helm Repo '$env:HELM_REPO_NAME' not found in the list."
-}
-
-helm repo add $env:HELM_REPO_NAME $env:HELM_REPO_URL
 
 az aks enable-addons `
     --addons monitoring `
