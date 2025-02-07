@@ -14,13 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: ${{ github.workspace }}/template
+          path: ${{ runner.temp }}/template
 
       # https://github.com/microsoft/template-validation-action
       - uses: microsoft/template-validation-action@v0.3.5
         id: validation
         with:
-          workingDirectory: ${{ github.workspace }}/template
+          workingDirectory: ${{ runner.temp }}/template
         env:
           AZURE_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
           AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
