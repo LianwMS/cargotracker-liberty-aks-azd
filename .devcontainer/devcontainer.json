@@ -3,6 +3,7 @@
   "remoteEnv": {
     "HELM_CACHE_HOME": "/tmp/helm-cache"
   },
+  "remoteUser": "root",
   "features": {
     "ghcr.io/devcontainers/features/azure-cli:1": {},
     "ghcr.io/azure/azure-dev/azd:0": {},
