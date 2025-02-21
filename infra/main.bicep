@@ -125,6 +125,7 @@ module cognitiveservices './shared/cognitiveservices.bicep' = {
         name: 'openai-deployment-${suffix}'
         model: {
           name: openAIModelName
+          version: '2024-08-06'
         }
       }
     ]
