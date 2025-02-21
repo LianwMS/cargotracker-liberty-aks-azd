@@ -68,7 +68,6 @@ resource deployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01
    model: {
       format: 'OpenAI'
       name: deployment.model.name
-      version: deployment.model.version
      }
   }
   sku: contains(deployment, 'sku') ? deployment.sku : {

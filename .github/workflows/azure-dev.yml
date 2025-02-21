@@ -67,7 +67,7 @@ jobs:
 
       - name: AZD Down
         run: |
-          azd dpwm
+          azd down
 
       - name: Show azd environments
         run: |

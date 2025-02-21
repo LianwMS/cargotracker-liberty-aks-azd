@@ -7,6 +7,10 @@ param environmentName string
 
 @minLength(1)
 @description('Primary location for all resources')
+@metadata({azd: {
+  type: 'location'
+  defaultLocation: 'eastus2'
+}})
 param location string
 
 @description('The base URL for artifacts')
@@ -121,7 +125,6 @@ module cognitiveservices './shared/cognitiveservices.bicep' = {
         name: 'openai-deployment-${suffix}'
         model: {
           name: openAIModelName
-          version: '2024-08-06'
         }
       }
     ]
