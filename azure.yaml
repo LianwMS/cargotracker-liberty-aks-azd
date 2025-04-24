@@ -52,6 +52,8 @@ hooks:
 services:
     demo:
         host: aks
+        docker:
+            remoteBuild: true
         k8s:
             namespace: default
             helm:
